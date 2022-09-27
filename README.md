@@ -27,7 +27,7 @@ The file provide the vertical profile data of eddy energy flux in the main strai
 
 ### `blue_red_sturated.mat` & `Red.mat` 
 
-The two data files are colormaps used to produce the figures in this paper. All relevant variable are included in the files. 
+The two data files are colormaps used to produce the figures in this paper. All relevant variables are included in the files. 
 
 
 ## Code
