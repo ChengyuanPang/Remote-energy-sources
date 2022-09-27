@@ -61,7 +61,7 @@ text(126.5,-10.2,'Timor Passage','fontsize',10);
 set(gcf,'PaperPositionMode','auto','InvertHardcopy','off','color','w');
 
 
-%% Fig 2 - Radiative energy fluxes
+%% Fig 2a - Radiative energy fluxes
 clear
 
 load radiative_flux.mat
@@ -106,7 +106,7 @@ set(clb,'Ticks',log10([0.3 1 3 10 30]),'TickLabels',['0.3';'1  ';'3  ';'10 ';'30
 set(gcf,'PaperPositionMode','auto','InvertHardcopy','off','color','w');
 
 
-%% Fig 3 - Advective energy fluxes
+%% Fig 2b - Advective energy fluxes
 %clear
 
 load advective_flux.mat
