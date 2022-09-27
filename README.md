@@ -1,10 +1,43 @@
 # Remote-energy-sources-for-mixing-in-the-Indonesian-Seas
-This project provides the data source of a nature communications paper. 
-The paper is about the remote energy source for mixing in the Indonesian Seas.
-T.mat is the data of a snapshot of the sea surface temperature in the Indonesain Seas, and is used to plot figure 1 in this paper.
-advective_flux.mat, radiative_flux.mat, and radiative_divergence.mat provide the raw data used for plotting the advective flux, radiative flux and energy divergence within the Indonesian Seas. They are used to plot figure 2a, figure 2b and figure 3 separately. 
-depth.mat provides the data for energy flux vertical profiles shown in figure 4.
-blue_red_sturated.mat and Red.mat are two colormap files which are used in this paper.
-scripts.m is the MATLAB script for all the figures in this paper.
-blockmean.m, cmocean.m and runmean.m are functions used in the scripts. 
-Plsese download all files into a folder and run the script.m at MATLAB. Then, you will get all of the figures in the paper. 
+
+The raw data are saved in Matlab data format, and analyzed under MATLAB. The Code and Data to reproduce key results are shown below. 
+## Contents
+<!-- toc -->
+- [Raw Data](#raw-data)
+- [Code](#code)
+<!-- tocstop -->
+Plsese download all files into a folder and run the script.m under MATLAB. Then, you will get all of the 5 figures in the paper. 
+## Raw Data
+
+### `T.mat`
+ 
+`T.mat` is the raw data to plot Fig. 1 in this paper. Within the data file, variables named as `XC`, `YC`, `T` and `D` represent longitude, latitude, surface temperature and ocean depth, respectively. 
+
+### `radiative_flux.mat` & `advective_flux.mat`
+
+`radiative_flux.mat` and `advective_flux.mat` provide the raw data to reproduce Fig. 2a and Fig. 2b. Variable `IFU`, `IFV` and `IFT` in `radiative_flux.mat` represent zonal, meridional and total radiative flux in this region. In `advective_flux.mat`, `DHX`, `DSY` and `AF` represent zonal, meridional and total advective flux in this region. 
+
+### `radiative_divergence.mat` 
+
+Using this data file can reproduce the Fig. 3 in the paper. `radiative_divergence.mat` provides the divergence of radiative energy flux named as `DEF`. 
+
+### `depth.mat`
+
+The file provide the vertical profile data of eddy energy flux in the main straits. 'Draw_Lx','Draw_Fx','Draw_Ox' and 'Draw_Tx' represent the energy profile in Lombok Strait, Sape Strait, Ombai Strait and Timor Passage. 'Draw_Sx','Draw_Mx','Draw_Bx' and 'Draw_Hx' represent the energy profile in Sulawesi Sea, Makassar Strait, Maluku Sea and Halmahera Sea. Variable 'Draw_y' represents the ocean depth.
+
+### `blue_red_sturated.mat` & `Red.mat` 
+
+The two data files are colormaps used to produce the figures in this paper. All relevant variable are included in the files. 
+
+
+## Code
+
+### `scripts.m`
+
+`scripts.m` includes 5 parts which, in turn, provide the code to produce the 5 figures in the paper.
+
+### `cmocean.m`, `blockmean.m` & `runmean.m` 
+
+`cmocean.m`, `blockmean.m` and  `runmean.m` are functions used in the `scripts.m`.
+
+
