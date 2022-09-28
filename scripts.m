@@ -2,6 +2,7 @@
 clear
 
 load T.mat
+load orange_blue_map.mat
 T(T==0) = NaN;
 figure
 fa = [108 138 -14 8.5];
@@ -10,8 +11,8 @@ shading flat;
 clb = colorbar;
 clb.Label.String = 'Temperature (^oC)';
 caxis([25 30]);
-% colormap(turbo);
-cmocean('thermal',40)
+colormap(orange_blue);
+
 
 hold on
 
@@ -186,7 +187,7 @@ clear
 load depth.mat
 
 clr_r = [200   0   0]/255;
-clr_g = [  0 128   0]/255;
+clr_g = [  1   1   1]/2;;
 clr_b = [  0 128 255]/255;
 clr_o = [255 128   0]/255;
 
