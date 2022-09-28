@@ -24,7 +24,7 @@ Using this data file can reproduce the Fig. 3 in the paper. `radiative_divergenc
 
 The file provide the vertical profile data of eddy energy flux in the main straits. `Draw_Lx`,`Draw_Fx`,`Draw_Ox` and `Draw_Tx` represent the energy profile in Lombok Strait, Sape Strait, Ombai Strait and Timor Passage. `Draw_Sx`,`Draw_Mx`,`Draw_Bx` and `Draw_Hx` represent the energy profile in Sulawesi Sea, Makassar Strait, Maluku Sea and Halmahera Sea. Variable `Draw_y` represents the ocean depth.
 
-### `blue_red_sturated.mat` & `Red.mat`:
+### `orange_blue_map.mat`, `blue_red_sturated.mat` & `Red.mat`:
 
 The two data files are colormaps used to produce the figures in this paper. All relevant variables are included in the files. 
 
@@ -35,8 +35,8 @@ The two data files are colormaps used to produce the figures in this paper. All 
 
 `scripts.m` includes 5 parts which, in turn, provide the code to produce the 5 figures in the paper.
 
-### `cmocean.m`, `blockmean.m` & `runmean.m`：
+### `blockmean.m` & `runmean.m`：
 
-`cmocean.m`, `blockmean.m` and  `runmean.m` are functions used in the `scripts.m`.
+`blockmean.m` and  `runmean.m` are functions used in the `scripts.m`.
 
 
