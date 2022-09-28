@@ -219,4 +219,3 @@ lg = legend('Lombok Strait','Sape Strait','Ombai Strait','Timor Passage','Sulawe
 set(lg,'Location','SouthEast','fontsize',18);
 
 set(gcf,'PaperPositionMode','auto','InvertHardcopy','off','color','w');
-print -depsc2 -r300 ~/Desktop/fig4_profiles.eps
